@@ -1,6 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 ion-item{
+  padding-bottom: 20px;
   ion-button{
     height: 50px;
     width: 100px;
+    color: rgb(255, 145, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
+}
+
+.button-1{
+  margin-top: 30px;
+}
+
+ion-row{
+  ion-button{
+    font-family:'Roboto', Times, serif;
+    size: 700;
+    color: rgb(255, 145, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ion-label{
+    margin-left: 10%;
+    margin-top: 20px;
+    font-family: 'Roboto', Courier, monospace;
+    font-size: small;
+  }
+}
+
+.container{
+  display: block;
+  margin-top: 10%;
+}
+
+.container1{
+  padding: 25px;
+}
+.card{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: rgb(23, 23, 36);
+  border-radius: 10px;
 }

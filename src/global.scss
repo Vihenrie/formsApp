@@ -25,9 +25,11 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+
+
 :root {
-	--ion-background-color: #243e5a;
-	--ion-background-color-rgb: 36,62,90;
+	--ion-background-color: rgb(2,0,36);
+	--ion-background-color-rgb: rgb(2,0,36);
 
 	--ion-text-color: #BBDEFF;
 	--ion-text-color-rgb: 187,222,255;
@@ -70,3 +72,5 @@ ion-title{
   font-family: 'roboto';
   color: rgb(255, 145, 0);
 }
+
+

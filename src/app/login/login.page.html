@@ -3,27 +3,36 @@
     <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content>
 
-<ion-item color="favorite">
+  <div class="container1">
+  <div class="card">
+<ion-item fill="outline" color="favorite">
   <ion-label>Email: </ion-label>
   <ion-input type="email" placeholder="Digite aqui..."></ion-input>
 </ion-item>
 
-<ion-item color="favorite">
+<ion-item fill="outline" color="favorite">
   <ion-label>Senha: </ion-label>
   <ion-input type="password" placeholder="Digite aqui..."></ion-input>
 </ion-item>
+</div>
+</div>
 
-<ion-item color="favorite">
-  <ion-button color="button" shape="round" fill="outline">ENTRAR</ion-button>
-  <ion-button color="button" shape="round" fill="outline">REGISTRAR</ion-button>
-  <ion-button color="button" shape="round" fill="outline">ESQUECEU A SENHA</ion-button>
-</ion-item>
-
-<ion-item>
-  <ion-button shape="round" fill="outline" color="button" routerLink="/tabs/tab1">VOLTAR</ion-button>
-</ion-item>
-
-<ion-content>
+<ion-grid>
+  <ion-row>
+      <ion-label color="favorite" shape="round" fill="outline">ESQUECEU A SENHA?</ion-label>
+  </ion-row>
+  <div class="container"></div>
+  <ion-row>
+    <ion-button color="button" shape="round" fill="outline">ENTRAR</ion-button>
+  </ion-row>
+  <ion-row>
+    <ion-button color="button" shape="round" fill="outline">REGISTRAR</ion-button>
+  </ion-row>
+  <ion-row>
+    <ion-button class="button-1" shape="round" fill="outline" color="button" routerLink="/tabs/tab1">VOLTAR</ion-button>
+  </ion-row>
+</ion-grid>
 
 </ion-content>

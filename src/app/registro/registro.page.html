@@ -5,29 +5,40 @@
 </ion-header>
 
 <ion-content>
-  <ion-item color="favorite">
+
+  <div class="container1">
+  <div class="card">
+  <ion-item fill="outline" color="favorite">
     <ion-label>Nome: </ion-label>
     <ion-input placeholder="Digite aqui..."></ion-input>
   </ion-item>
-  <ion-item color="favorite">
+  <ion-item fill="outline" color="favorite">
     <ion-label>CPF: </ion-label>
     <ion-input type="number" placeholder="Digite aqui..."></ion-input>
   </ion-item>
-  <ion-item color="favorite">
+  <ion-item fill="outline" color="favorite">
     <ion-label>Email: </ion-label>
     <ion-input type="email" placeholder="Digite aqui..."></ion-input>
   </ion-item>
-  <ion-item color="favorite">
+  <ion-item fill="outline" color="favorite">
     <ion-label>Senha: </ion-label>
     <ion-input type="password" placeholder="Digite aqui..."></ion-input>
   </ion-item>
-  <ion-item color="favorite">
+  <ion-item fill="outline" color="favorite">
     <ion-label>Confirmar Senha: </ion-label>
     <ion-input type="password" placeholder="Digite aqui..."></ion-input>
   </ion-item>
+  <div class="container"></div>
+</div>
+</div>
 
-  <ion-item>
-    <ion-button color="button" shape="round" fill="outline" routerLink="/tabs/tab1">VOLTAR</ion-button>
-    <ion-button color="button" shape="round" fill="outline">SALVAR</ion-button>
-  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-button color="button" shape="round" fill="outline" routerLink="/tabs/tab1">VOLTAR</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button color="button" shape="round" fill="outline">SALVAR</ion-button>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
