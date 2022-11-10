@@ -1,26 +1,27 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="favorite">
     <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-item>
+<ion-item color="favorite">
   <ion-label>Email: </ion-label>
-  <ion-input placeholder="Digite aqui..."></ion-input>
+  <ion-input type="email" placeholder="Digite aqui..."></ion-input>
 </ion-item>
-<ion-item>
+
+<ion-item color="favorite">
   <ion-label>Senha: </ion-label>
-  <ion-input placeholder="Digite aqui..."></ion-input>
+  <ion-input type="password" placeholder="Digite aqui..."></ion-input>
+</ion-item>
+
+<ion-item color="favorite">
+  <ion-button color="button" shape="round" fill="outline">ENTRAR</ion-button>
+  <ion-button color="button" shape="round" fill="outline">REGISTRAR</ion-button>
+  <ion-button color="button" shape="round" fill="outline">ESQUECEU A SENHA</ion-button>
 </ion-item>
 
 <ion-item>
-  <ion-button>ENTRAR</ion-button>
-  <ion-button>REGISTRAR</ion-button>
-  <ion-button>ESQUECEU A SENHA</ion-button>
-</ion-item>
-
-<ion-item>
-  <ion-button routerLink="/tabs/tab1">VOLTAR</ion-button>
+  <ion-button shape="round" fill="outline" color="button" routerLink="/tabs/tab1">VOLTAR</ion-button>
 </ion-item>
 
 <ion-content>

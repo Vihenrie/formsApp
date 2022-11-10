@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="favorite">
     <ion-title>
       Home
     </ion-title>
@@ -7,11 +7,23 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item routerLink="/login">
-    <ion-label>LOGIN</ion-label>
-  </ion-item>
-  <ion-item routerLink="/registro">
-    <ion-label>REGISTRO</ion-label>
-  </ion-item>
+  <div class="circle"></div>
+  <div class="circle2"></div>
+  <div class="circle1"></div>
+  <div class="circle21"></div>
 
+  <div class="container"></div>
+  <ion-grid>
+    <ion-row>
+      <ion-button color="button" shape="round" fill="outline" routerLink="/login">LOGIN</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button color="button" shape="round" fill="outline" routerLink="/registro">REGISTRO</ion-button>
+    </ion-row>
+  </ion-grid>
+
+  <div class="circle_back"></div>
+  <div class="circle2_back"></div>
+  <div class="circle_back"></div>
+  <div class="circle2_back"></div>
 </ion-content>
