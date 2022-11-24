@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+ion-title{
+  font-weight: 700;
+  font-family: 'roboto';
+  color: rgb(255, 145, 0);
+}
+
 ion-item{
   padding-bottom: 20px;
-  ion-button{
-    height: 50px;
-    width: 100px;
+  ion-label{
+    font-family: 'roboto';
+    font-weight: 700;
     color: rgb(255, 145, 0);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 .button-1{
@@ -15,7 +19,7 @@ ion-item{
 }
 ion-row{
   ion-button{
-    font-family:'Roboto', Times, serif;
+    font-family:'roboto';
     size: 700;
     color: rgb(255, 145, 0);
     display: block;
@@ -25,8 +29,9 @@ ion-row{
   ion-label{
     margin-left: 10%;
     margin-top: 20px;
-    font-family: 'Roboto', Courier, monospace;
+    font-family: 'roboto';
     font-size: small;
+    color: rgb(255, 145, 0);
   }
 }
 .container{
