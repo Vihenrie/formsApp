@@ -54,7 +54,7 @@ export class RegistroPage implements OnInit {
       this.usuario.email = this.formRegistro.value.email;
       this.usuario.senha = this.formRegistro.value.senha;
       await this.storageService.set(this.usuario.email, this.usuario);
-      this.route.navigateByUrl('/tab1');
+      this.route.navigateByUrl('/home');
     }else{
       alert('Formulário inválido!');
     }

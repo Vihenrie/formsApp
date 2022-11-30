@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { Usuario } from '../models/Usuario';
-import { StorageService } from '../services/storage.service';
 
 @Component({
   selector: 'app-tab1',
@@ -9,14 +7,6 @@ import { StorageService } from '../services/storage.service';
 })
 export class Tab1Page {
 
-  listaUsuarios: Usuario[] = [];
-
-  constructor(private storageService: StorageService) {}
-    async buscarUsuarios(){
-      this.listaUsuarios = await this.storageService.getAll();
-    }
-    ionViewEnter(){
-      this.buscarUsuarios();
-    }
+  constructor() {}
 
 }

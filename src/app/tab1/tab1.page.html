@@ -1,8 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="favorite">
-    <ion-title>
-      Home
-    </ion-title>
+    <ion-buttons slot="secondary">
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button routerLink="/home">
+        <ion-icon slot="icon-only" name="log-in-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -22,8 +27,4 @@
     </ion-row>
   </ion-grid>
 
-  <div class="circle_back"></div>
-  <div class="circle2_back"></div>
-  <div class="circle1_back"></div>
-  <div class="circle21_back"></div>
 </ion-content>
