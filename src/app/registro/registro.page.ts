@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { Router } from '@angular/router';
 import { Usuario } from '../models/Usuario';
@@ -9,7 +9,7 @@ import { StorageService } from '../services/storage.service';
   templateUrl: './registro.page.html',
   styleUrls: ['./registro.page.scss'],
 })
-export class RegistroPage implements OnInit {
+export class RegistroPage {
 
   formRegistro: FormGroup;
   usuario: Usuario = new Usuario();
@@ -43,9 +43,6 @@ export class RegistroPage implements OnInit {
       confirmaSenha: ['', Validators.required]
     });
    }
-
-  ngOnInit() {
-  }
 
   async salvarRegistro(){
     if(this.formRegistro.valid){

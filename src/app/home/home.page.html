@@ -15,7 +15,7 @@
   <ion-item-sliding *ngFor="let user of listaUsuarios">
     <ion-item>
       <ion-label>
-        <div>
+        <div class="texto">
           <h1>{{user.nome}}</h1>
           <span style="float: right;">{{user.cpf}}</span>
           <a href="mailto:{{user.email}}">{{user.email}}</a>
@@ -24,7 +24,7 @@
     </ion-item>
 
     <ion-item-options side="end">
-      <ion-item-option color="danger">
+      <ion-item-option color="danger" (click)="excluirRegistro(user.email)">
         <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
       </ion-item-option>
     </ion-item-options>

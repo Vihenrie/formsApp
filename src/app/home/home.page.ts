@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Usuario } from '../models/Usuario';
 import { StorageService } from '../services/storage.service';
 
@@ -7,19 +7,22 @@ import { StorageService } from '../services/storage.service';
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
-export class HomePage implements OnInit {
+export class HomePage {
 
   listaUsuarios: Usuario[] = [];
 
   constructor(private storageService: StorageService) { }
 
-  ngOnInit(): void { }
-
   async buscarUsuarios(){
     this.listaUsuarios = await this.storageService.getAll();
   }
 
-  ionViewEnter(){
+  ionViewDidEnter(){
+    this.buscarUsuarios();
+  }
+
+  async excluirRegistro(email: string){
+    await this.storageService.remove(email);
     this.buscarUsuarios();
   }
 }
